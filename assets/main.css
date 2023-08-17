@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 70em;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.heading h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+p,
+ul {
+  line-height: 1.6;
+}
