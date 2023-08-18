@@ -6,13 +6,14 @@
   </div> -->
     
 <div>
-    <div class="heroimage" id="home">
+    <!-- <div class="heroimage" id="home">
     
  <figure class="hero">
     <img class="heroimage" src="../assets/background.jpeg"/>
  </figure>
  
- </div>
+ </div> -->
+ <CarouselComp/>
  
     </div>
 </template>
@@ -23,11 +24,7 @@
 </script>
 
 <style scoped>
-body{
-    margin:0;
-    padding:0;
-}
-.hero {
+/* .hero {
   margin: 100px 0 50px 0;
   width: 100vw;
   max-height: 100vh;
@@ -50,5 +47,5 @@ body{
   .hero {
     margin: 0;
   }
-}
+} */
 </style>

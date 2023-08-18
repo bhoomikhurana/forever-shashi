@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <!-- <div> -->
     <div :style="{ backgroundImage: `url(${backgroundUrl})` }">Content with background here</div>
     <!-- <div class="hero" :style="{ backgroundImage: `url(${backgroundUrl})` }"> -->
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -14,7 +14,7 @@
 // }
 </script>
 <style scoped>
-.hero {
+/* .hero {
   margin: 100px 0 50px 0;
   width: 100vw;
   max-height: 100vh;
@@ -36,5 +36,5 @@
   .hero {
     margin: 0;
   }
-}
+} */
 </style>

@@ -1,60 +1,54 @@
 <template>
-    <div>
+  <div>
     <header>
-        <div class="logo">
+      <div class="logo">
         <figure>
-          <NuxtLink to='/'>
-    <img src="../assets/forever_shashi_logo.png"/>
-    </NuxtLink>
- </figure>
-        </div>
-        <nav>
-            <ul>
-                <NuxtLink to='/'><li>HOME</li></NuxtLink>
-                <NuxtLink to='/about'><li>ABOUT</li></NuxtLink>
-                <li>VISION</li>
-                <li>PROJECTS</li>
-                <li>VALUES</li>
-                <li>TEAM</li>
-                <li>JOIN US</li>
-                <li>CONTACT US</li>
-                    
-                
-            </ul>
-        </nav>
+          <NuxtLink to="/">
+            <img src="../assets/forever_shashi_logo.png" />
+          </NuxtLink>
+        </figure>
+      </div>
+      <nav>
+        <ul>
+          <NuxtLink to="/"><li>HOME</li></NuxtLink>
+          <NuxtLink to="/about"><li>ABOUT</li></NuxtLink>
+          <li>VISION</li>
+          <li>PROJECTS</li>
+          <li>VALUES</li>
+          <li>TEAM</li>
+          <li>JOIN US</li>
+          <li>CONTACT US</li>
+        </ul>
+      </nav>
     </header>
     <div>
-        <slot />
-        </div>
+      <slot />
     </div>
+  </div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style scoped>
 .logo {
   width: 100px;
   height: auto;
-  
 }
 
 .logo img {
-  width: 100%;
+  width: 100px;
   height: auto;
 }
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1em;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   font-weight: 900;
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   background-color: white;
   width: 100%;
   z-index: 9999;
