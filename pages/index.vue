@@ -1,27 +1,19 @@
 <template>
-<!-- <div class="hero" id="home">
-    <div class="heroimage">
-       <img class="hero" src="../assets/background.jpeg"/>
-    </div>
-  </div> -->
-    
-<div>
-    <!-- <div class="heroimage" id="home">
-    
- <figure class="hero">
-    <img class="heroimage" src="../assets/background.jpeg"/>
- </figure>
- 
- </div> -->
- <CarouselComp/>
- 
-    </div>
+  <div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <CarouselComp />
+    <AboutComp />
+    <VisionComp />
+    <Projects />
+    <OurValuesComp />
+  </div>
 </template>
 
-<script >
-
-
-</script>
+<script></script>
 
 <style scoped>
 /* .hero {

@@ -1,13 +1,26 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   builder: "webpack",
+  css: ["~/assets/main.css"],
+
   webpack: {
-    // extractCSS: {
-    //   ignoreOrder: true,
-    // },
-    
-    use: ['style-loader', 'css-loader']
-    
-    
+    extractCSS: true,
+    loaders: {
+      vue: {
+        hotReload: true,
+      },
+    },
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: "styles",
+            test: /\.(css|vue)$/,
+            chunks: "all",
+            enforce: true,
+          },
+        },
+      },
+    },
   },
 });

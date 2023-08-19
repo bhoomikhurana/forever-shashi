@@ -51,7 +51,7 @@ export default defineComponent({
   height: 100%;
 }
 .carousel__slide {
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .carousel__prev,
