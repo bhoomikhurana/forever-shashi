@@ -10,6 +10,8 @@
     <VisionComp />
     <Projects />
     <OurValuesComp />
+    <Members />
+    <JoinUsComp />
   </div>
 </template>
 

@@ -21,9 +21,30 @@
         </ul>
       </nav>
     </header>
+
     <div>
       <slot />
     </div>
+    <footer>
+      <div class="contact-us" id="contact-us">
+        <div class="container">
+          <div class="heading">
+            <h3>contact us</h3>
+          </div>
+          <div class="main-body">
+            <p>
+              474 –A/1 G/F Main Circular Road Shahdara, Near Bijli Ghar,
+              Delhi-110032
+            </p>
+            <p>
+              <a href="mailto:oxi4uturegreens@gmail.com"
+                >oxi4uturegreens@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -66,6 +87,20 @@ nav ul a {
   color: #191919;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.contact-us {
+  background-color: #191919;
+}
+.heading h3 {
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+  color: white;
+}
+
+.main-body p,
+a {
+  color: white;
 }
 @media (max-width: 35em) {
   header {

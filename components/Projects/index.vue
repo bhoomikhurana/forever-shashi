@@ -26,19 +26,32 @@
       <br />
       <br />
 
-      <!-- <div class="main-body"> -->
-      <!-- <div v-for="p in projects" :key=>
-            <Project1 :project="p"> -->
-      <!-- </div> -->
-      <div class="box">
-        <ProjectsProject1 />
-        <ProjectsProject2 />
-      </div>
+      <ProjectsProjectItem
+        class="box"
+        v-for="project in projects"
+        :key="project"
+        :project="project"
+      />
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  created() {
+    this.projects = [
+      {
+        name: "abc",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, cupiditate?",
+      },
+      {
+        name: "xyz",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, cupiditate?",
+      },
+    ];
+  },
+};
+</script>
 
 <style scoped>
 .heading h3 {
@@ -64,5 +77,13 @@
 }
 ul {
   list-style-type: ">";
+}
+.box {
+  width: 100%;
+  font-size: 20px;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  margin-top: 2%;
 }
 </style>
