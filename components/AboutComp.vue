@@ -1,6 +1,9 @@
 <template>
   <div class="about" id="about">
     <div class="container">
+      <div class="heading">
+        <h3>about</h3>
+      </div>
       <p>
         Forever Shashi Foundation (FSF) a registered pan-India NGO with the aim
         to educate and empower adolescents and youth on various social and
@@ -43,10 +46,15 @@
 <script setup></script>
 
 <style scoped>
+.heading h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
 .about p {
   font-weight: 600;
   position: relative;
-  top: 20%;
+  /* top: 20%; */
   color: black;
 }
 .quote {

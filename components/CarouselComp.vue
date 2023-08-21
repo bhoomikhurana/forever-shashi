@@ -1,16 +1,18 @@
 <template>
-  <Carousel :autoplay="3000" :wrap-around="true">
-    <Slide v-for="slide in 10" :key="slide">
-      <div class="carousel__item">
-        <img :src="getImgUrl(slide)" class="image-style" alt="" />
-      </div>
-    </Slide>
+  <div class="home" id="home">
+    <Carousel :autoplay="3000" :wrap-around="true">
+      <Slide v-for="slide in 10" :key="slide">
+        <div class="carousel__item">
+          <img :src="getImgUrl(slide)" class="image-style" alt="" />
+        </div>
+      </Slide>
 
-    <template #addons>
-      <Navigation />
-      <Pagination />
-    </template>
-  </Carousel>
+      <template #addons>
+        <Navigation />
+        <Pagination />
+      </template>
+    </Carousel>
+  </div>
 </template>
 
 <script>

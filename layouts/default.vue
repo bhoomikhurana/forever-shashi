@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header>
+    <header :class="toggleMenuClass">
       <div class="logo">
         <figure>
           <NuxtLink to="/">
@@ -10,18 +10,25 @@
       </div>
       <nav>
         <ul>
-          <NuxtLink to="/"><li>HOME</li></NuxtLink>
-          <NuxtLink to="/about"><li>ABOUT</li></NuxtLink>
-          <li>VISION</li>
-          <li>PROJECTS</li>
-          <li>VALUES</li>
-          <li>TEAM</li>
-          <li>JOIN US</li>
-          <li>CONTACT US</li>
+          <NuxtLink :to="{ hash: '#home' }">
+            <li @click="scrollTop">HOME</li></NuxtLink
+          >
+          <NuxtLink :to="{ hash: '#about' }"><li>ABOUT</li></NuxtLink>
+          <NuxtLink :to="{ hash: '#vision' }"><li>VISION</li></NuxtLink>
+          <NuxtLink :to="{ hash: '#projects' }"><li>PROJECTS</li></NuxtLink>
+          <NuxtLink :to="{ hash: '#values' }"><li>VALUES</li></NuxtLink>
+          <NuxtLink :to="{ hash: '#members' }"><li>TEAM</li></NuxtLink>
+          <NuxtLink :to="{ hash: '#joinus' }"><li>JOIN US</li></NuxtLink>
+
+          <NuxtLink :to="{ hash: '#contact-us' }">
+            <li>CONTACT US</li></NuxtLink
+          >
         </ul>
+        <!-- <div class="mobile-menu" @click="toggleMenu">
+          <img src="../assets/menu-black.png" alt="" />
+        </div> -->
       </nav>
     </header>
-
     <div>
       <slot />
     </div>
@@ -48,7 +55,16 @@
   </div>
 </template>
 
-<script></script>
+<script setup lang="ts">
+// const scrollTop = () => {
+//   window.scrollTo(0, 0);
+// };
+const scrollTop = () => {
+  return new Promise((resolve) => {
+    resolve({ left: 0, top: 0 });
+  });
+};
+</script>
 
 <style scoped>
 .logo {
@@ -88,6 +104,27 @@ nav ul a {
   text-transform: uppercase;
   font-weight: 700;
 }
+.mobile-menu {
+  display: none;
+}
+
+.showMenu {
+  left: 0%;
+}
+
+.hideMenu {
+  left: 0%;
+}
+
+.ghost-button {
+  border: 2px solid #8b231d;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.ghost-button a {
+  color: #8b231d;
+}
 
 .contact-us {
   background-color: #191919;
@@ -126,6 +163,31 @@ a {
   nav ul a {
     text-transform: lowercase;
     font-weight: 600;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 2em;
+    right: 3em;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 3px solid #191919;
+    background-color: white;
+  }
+
+  .mobile-menu img {
+    width: 100%;
+    height: auto;
+  }
+
+  .showMenu {
+    left: 0%;
+  }
+
+  .hideMenu {
+    left: -100%;
   }
 }
 </style>

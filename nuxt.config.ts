@@ -2,6 +2,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   builder: "webpack",
   css: ["~/assets/main.css"],
+  plugins: [{ src: "~/plugins/scroll-behavior.client.ts", mode: "client" }],
 
   webpack: {
     extractCSS: true,
