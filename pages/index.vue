@@ -6,40 +6,15 @@
     />
 
     <CarouselComp />
-    <AboutComp />
+    <About />
     <VisionComp />
     <Projects />
     <OurValuesComp />
-    <Members />
+    <!-- <Members /> -->
     <JoinUsComp />
   </div>
 </template>
 
 <script></script>
 
-<style scoped>
-/* .hero {
-  margin: 100px 0 50px 0;
-  width: 100vw;
-  max-height: 100vh;
-  overflow: hidden;
-}
-
-.heroimage {
-  width: 100%;
-  height: auto;
-}
-
-.heroimage img {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-}
-
-
-@media (max-width: 35em) {
-  .hero {
-    margin: 0;
-  }
-} */
-</style>
+<style scoped></style>

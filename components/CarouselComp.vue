@@ -1,7 +1,7 @@
 <template>
   <div class="home" id="home">
     <Carousel :autoplay="3000" :wrap-around="true">
-      <Slide v-for="slide in 10" :key="slide">
+      <Slide v-for="slide in 6" :key="slide">
         <div class="carousel__item">
           <img :src="getImgUrl(slide)" class="image-style" alt="" />
         </div>
@@ -30,20 +30,25 @@ export default defineComponent({
   },
   methods: {
     getImgUrl(index) {
-      return require(`~/assets/Background/${index}.png`);
+      return require(`~/assets/Background/${index}.jpg`);
     },
   },
 });
 </script>
 
 <style>
+.home {
+  margin-top: 6%;
+  /* height: 200px; */
+}
 .carousel__item {
-  height: 600px;
+  object-fit: cover;
+  height: 540px;
+  /* height: 100%; */
   width: 100%;
   background-color: var(--vc-clr-primary);
   color: var(--vc-clr-white);
   font-size: 20px;
-  /* border-radius: 8px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,20 +57,15 @@ export default defineComponent({
   width: 100%;
   height: 100%;
 }
-.carousel__slide {
-  /* padding: 10px; */
-}
 
 .carousel__prev,
 .carousel__next {
   box-sizing: content-box;
-  /* border: 5px solid white; */
   color: white;
 }
-.carousel__prev,
+.carousel__prev:hover,
 .carousel__next:hover {
   box-sizing: content-box;
-  /* border: 5px solid white; */
   color: rgb(195, 195, 195);
 }
 </style>

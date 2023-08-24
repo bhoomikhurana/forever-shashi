@@ -3,6 +3,7 @@
     <div class="container">
       <div class="heading">
         <h3>about</h3>
+        <h4 id="sub-heading">Who are we?</h4>
       </div>
       <p>
         Forever Shashi Foundation (FSF) a registered pan-India NGO with the aim
@@ -77,7 +78,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-body {
+#sub-heading {
+  padding-bottom: 1rem;
 }
 
 blockquote {

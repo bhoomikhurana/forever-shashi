@@ -1,64 +1,16 @@
 <template>
   <div>
-    <header :class="toggleMenuClass">
-      <div class="logo">
-        <figure>
-          <NuxtLink to="/">
-            <img src="../assets/forever_shashi_logo.png" />
-          </NuxtLink>
-        </figure>
-      </div>
-      <nav>
-        <ul>
-          <NuxtLink :to="{ hash: '#home' }">
-            <li @click="scrollTop">HOME</li></NuxtLink
-          >
-          <NuxtLink :to="{ hash: '#about' }"><li>ABOUT</li></NuxtLink>
-          <NuxtLink :to="{ hash: '#vision' }"><li>VISION</li></NuxtLink>
-          <NuxtLink :to="{ hash: '#projects' }"><li>PROJECTS</li></NuxtLink>
-          <NuxtLink :to="{ hash: '#values' }"><li>VALUES</li></NuxtLink>
-          <NuxtLink :to="{ hash: '#members' }"><li>TEAM</li></NuxtLink>
-          <NuxtLink :to="{ hash: '#joinus' }"><li>JOIN US</li></NuxtLink>
-
-          <NuxtLink :to="{ hash: '#contact-us' }">
-            <li>CONTACT US</li></NuxtLink
-          >
-        </ul>
-        <!-- <div class="mobile-menu" @click="toggleMenu">
-          <img src="../assets/menu-black.png" alt="" />
-        </div> -->
-      </nav>
+    <header>
+      <NavbarComp />
     </header>
-    <div>
-      <slot />
-    </div>
+    <slot />
     <footer>
-      <div class="contact-us" id="contact-us">
-        <div class="container">
-          <div class="heading">
-            <h3>contact us</h3>
-          </div>
-          <div class="main-body">
-            <p>
-              474 –A/1 G/F Main Circular Road Shahdara, Near Bijli Ghar,
-              Delhi-110032
-            </p>
-            <p>
-              <a href="mailto:oxi4uturegreens@gmail.com"
-                >oxi4uturegreens@gmail.com</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
+      <FooterComp />
     </footer>
   </div>
 </template>
 
 <script setup lang="ts">
-// const scrollTop = () => {
-//   window.scrollTo(0, 0);
-// };
 const scrollTop = () => {
   return new Promise((resolve) => {
     resolve({ left: 0, top: 0 });
@@ -77,6 +29,7 @@ const scrollTop = () => {
   height: auto;
 }
 header {
+  padding: 0.7rem;
   display: flex;
   justify-content: space-around;
   align-items: center;

@@ -2,7 +2,6 @@
 
 <template>
   <div>
-    <h1 id="name">{{ project.name }}</h1>
     <h1 id="desc">{{ project.desc }}</h1>
   </div>
 </template>
@@ -16,7 +15,18 @@ export default {
 </script>
 
 <style>
+.img-container {
+  width: ;
+}
 #desc {
   font-size: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.177);
+  backdrop-filter: blur(5px);
+  padding: 2%;
+}
+.texture-img {
+  width: 100%;
 }
 </style>
