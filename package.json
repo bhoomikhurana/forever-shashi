@@ -11,7 +11,6 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxtjs/fontawesome": "^1.1.2",
     "@types/node": "^18.17.3",
     "nuxt": "^3.6.5",
     "nuxt-gsap-module": "^2.0.0"

@@ -64,17 +64,6 @@
       <h4 id="auth">Mrs Shashi Sinha</h4>
     </div>
   </div>
-
-  <!-- <div id="quote">
-      ❝ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-      reiciendis.❞
-    </div> -->
-  <!-- <blockquote class="quote">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas,
-      laudantium!
-    </blockquote>-->
-  <!-- <cite class="quote" id="author">~Mrs Shashi</cite> -->
-  <!-- <div class="photo"> -->
 </template>
 
 <script>
@@ -101,25 +90,18 @@ export default {
 .about p {
   font-weight: 400;
   position: relative;
-  /* top: 20%; */
   color: black;
 }
 .containertwo {
-  /* width: 70%; */
   text-align: left;
-  /* margin: 10px 10%; */
   margin-inline-start: 13%;
   margin-inline-end: 13%;
   margin-bottom: 2%;
-  /* margin-right: 200px; */
 }
 .photo {
-  /* display: flex;
-  justify-content: flex-end; */
   position: absolute;
   right: 10%;
   top: 150%;
-  /* margin-inline-end: 10%; */
 }
 #sub-heading {
   padding-bottom: 1rem;
@@ -127,6 +109,8 @@ export default {
 .decor {
   text-decoration: underline;
   text-decoration-color: rgb(255, 102, 0);
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
   font-weight: 500;
 }
 
@@ -135,11 +119,6 @@ export default {
   position: absolute;
   top: 78%;
   left: 32%;
-
-  /* right: 10%; */
-
-  /* margin-top: 1%; */
-  /* padding: 2%; */
 }
 
 img {

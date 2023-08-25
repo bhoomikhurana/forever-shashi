@@ -15,9 +15,6 @@ export default {
 </script>
 
 <style>
-.img-container {
-  width: ;
-}
 #desc {
   font-size: 1rem;
   border-radius: 10px;

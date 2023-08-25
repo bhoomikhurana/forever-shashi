@@ -11,9 +11,6 @@
         environmental issues, organizing tree-planting drives, and working
         towards the welfare of society.
       </p>
-      <!-- <br /> -->
-
-      <!-- <img src="~/assets/img-texture.jpg" class="bg-img" /> -->
       <div class="row">
         <h3 class="areas">Areas of Action</h3>
         <div class="col">
@@ -56,7 +53,7 @@
       <br />
       <br />
 
-      <ProjectsProjectItem
+      <ProjectItem
         class="box"
         v-for="project in projects"
         :key="project"
@@ -67,7 +64,18 @@
 </template>
 
 <script>
+import ProjectItem from "./Utilities/ProjectItem.vue";
+
 export default {
+  data() {
+    return {
+      ProjectItem,
+    };
+  },
+  components: {
+    ProjectItem,
+  },
+
   created() {
     this.projects = [
       {
@@ -116,22 +124,11 @@ export default {
 ul {
   list-style-type: ">";
 }
-/* .parent {
-  position: relative;
-  top: 0;
-  left: 0;
-} */
-/* .bg-img {
-  position: relative;
-  width: 200%;
-  height: 60vh;
-} */
 .illustration {
   width: 110%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1px;
+  margin-left: 0px;
+  margin-top: 20px;
+  /* height: 50vh; */
 }
 .areas {
   text-align: center;
@@ -165,7 +162,7 @@ ul {
 }
 .col {
   flex: 33.33%;
-  padding: 1px;
+  /* padding: 1px; */
 }
 .box {
   width: 100%;

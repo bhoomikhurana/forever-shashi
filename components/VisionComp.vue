@@ -50,13 +50,15 @@
         </h4>
         <br />
         <ul>
-          <li>
+          <li class="container-sdg">
+            <img src="../assets/SDG11.png" alt="" class="img-container" />
+
             <h4 class="pointer">
               SDG 11: Make cities and human settlements inclusive, safe,
               resilient and sustainable
             </h4>
 
-            <p>
+            <p class="text">
               As the cities are becoming more populous and seeing rapid
               development of infrastructure, the surrounding environment is
               slowly disappearing. More and more people are living in urban
@@ -65,16 +67,18 @@
               backgrounds are the first victims of development and climate
               change. It is becoming more and more critical day by day to ensure
               that cities are built to be eco-friendly, sustainable and
-              resilient in order to continue thriving and surviving.  
+              resilient in order to continue thriving and surviving.
             </p>
           </li>
+
           <br />
-          <li>
+          <li class="container-sdg">
+            <img src="../assets/SDG12.png" alt="" class="img-container" />
             <h4 class="pointer">
               SDG 12: Ensure sustainable consumption and production patterns
             </h4>
 
-            <p>
+            <p class="text">
               The world is seeing rampant obesity and chronic malnutrition at
               the same time. Not only is there a major divide between access to
               basic food and nutrition, more and more food available in the
@@ -86,14 +90,21 @@
               diseases.
             </p>
           </li>
+
           <br />
-          <li>
+          <li class="container-sdg" id="three">
+            <img
+              src="../assets/SDG13.png"
+              alt=""
+              class="img-container"
+              id="imgthree"
+            />
             <h4 class="pointer">
               SDG 13: Take urgent action to combat climate change and its
               impacts
             </h4>
 
-            <p>
+            <p class="text">
               Climate change disproportionately affects vulnerable communities,
               exacerbating existing inequalities. By prioritizing climate
               action, SDG 13 aims to ensure that climate policies and actions
@@ -108,13 +119,19 @@
             </p>
           </li>
           <br />
-          <li>
+          <li class="container-sdg" id="four">
+            <img
+              src="../assets/SDG16.png"
+              alt=""
+              class="img-container"
+              id="imgfour"
+            />
             <h4 class="pointer">
               SDG 16: Promote peaceful and inclusive societies for sustainable
               development, provide access to justice for all and build
               effective, accountable and inclusive institutions at all levels
             </h4>
-            <p>
+            <p class="text" id="textfour">
               SDG 16 focuses on promoting peaceful, just, and inclusive
               societies and aims to build effective, accountable, and inclusive
               institutions at all levels. It addresses critical issues related
@@ -133,19 +150,18 @@
               sustainable development.
             </p>
           </li>
-          <br />
-          <p>
-            We strongly believe linking civic duties with climate change action
-            is essential to fostering collective responsibility and encouraging
-            active participation in addressing the global climate crisis. By
-            linking civic duties with climate change action, we can foster a
-            sense of shared responsibility and empower individuals and
-            communities to actively contribute to climate solutions. Taking
-            collective action can create a positive ripple effect, inspiring
-            others to join the effort and drive meaningful change for a more
-            sustainable future.
-          </p>
         </ul>
+        <br />
+        <p>
+          We strongly believe linking civic duties with climate change action is
+          essential to fostering collective responsibility and encouraging
+          active participation in addressing the global climate crisis. By
+          linking civic duties with climate change action, we can foster a sense
+          of shared responsibility and empower individuals and communities to
+          actively contribute to climate solutions. Taking collective action can
+          create a positive ripple effect, inspiring others to join the effort
+          and drive meaningful change for a more sustainable future.
+        </p>
       </div>
     </div>
   </div>
@@ -169,7 +185,65 @@
 .main-body > p {
   text-align: left;
 }
+.img-container {
+  width: 50%;
+  position: relative;
+  bottom: 115%;
+  right: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#three {
+  height: 38vh;
+}
+#four {
+  height: 56vh;
+}
+#textfour {
+  margin-top: 5%;
+}
+#imgthree {
+  bottom: 100%;
+}
+#imgfour {
+  bottom: 64%;
+}
+.container-sdg {
+  background-color: rgb(101, 98, 98);
+  height: 34vh;
+  width: 100%;
+  font-size: 20px;
+  padding: 1em;
+  border-radius: 10px;
+  margin-top: 2%;
+  background-color: #c3cbdc;
+  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+  position: relative;
+}
+.pointer {
+  position: absolute;
+  top: 8%;
+  left: 22%;
+  font-size: 18px;
+}
+.text {
+  height: 70px;
+  margin-top: 2%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 80%;
+  font-size: 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+  padding: 2%;
+  width: fit-content;
+  block-size: fit-content;
+}
 ul {
-  list-style-type: decimal;
+  list-style: none;
 }
 </style>
