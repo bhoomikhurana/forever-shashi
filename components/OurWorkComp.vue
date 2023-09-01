@@ -16,11 +16,17 @@
       <br />
       <div class="areas-of-work">
         <div class="environmental">
-          <img src="~/assets/ourwork-environmental.png" alt="" />
+          <img
+            src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/ourwork-environmental.png"
+            alt=""
+          />
         </div>
 
         <div class="social">
-          <img src="~/assets/ourwork-social.png" alt="" />
+          <img
+            src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/ourwork-social.png"
+            alt=""
+          />
         </div>
       </div>
     </div>

@@ -76,7 +76,10 @@
             </p>
           </div>
           <div class="image">
-            <img src="~/assets/mrs-shashi.png" alt="" />
+            <img
+              src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/mrs-shashi.png"
+              alt=""
+            />
           </div>
         </div>
       </div>

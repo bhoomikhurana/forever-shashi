@@ -8,32 +8,50 @@
     >
       <Slide :key="1">
         <div class="carousel__item">
-          <img src="~/assets/carousel/1.jpg" alt="" />
+          <img
+            src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/carousel/1.jpg"
+            alt=""
+          />
         </div>
       </Slide>
       <Slide :key="2">
         <div class="carousel__item">
-          <img src="~/assets/carousel/2.jpg" alt="" />
+          <img
+            src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/carousel/2.jpg"
+            alt=""
+          />
         </div>
       </Slide>
       <Slide :key="3">
         <div class="carousel__item">
-          <img src="~/assets/carousel/3.jpg" alt="" />
+          <img
+            src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/carousel/3.jpg"
+            alt=""
+          />
         </div>
       </Slide>
       <Slide :key="2">
         <div class="carousel__item">
-          <img src="~/assets/carousel/4.jpg" alt="" />
+          <img
+            src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/carousel/4.jpg"
+            alt=""
+          />
         </div>
       </Slide>
       <Slide :key="5">
         <div class="carousel__item">
-          <img src="~/assets/carousel/5.jpg" alt="" />
+          <img
+            src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/carousel/5.jpg"
+            alt=""
+          />
         </div>
       </Slide>
       <Slide :key="6">
         <div class="carousel__item">
-          <img src="~/assets/carousel/6.jpg" alt="" />
+          <img
+            src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/carousel/6.jpg"
+            alt=""
+          />
         </div>
       </Slide>
 

@@ -3,7 +3,10 @@
     <nav>
       <div class="navbar container" :class="showMenu ? 'show-mobile-menu' : ''">
         <div class="logo">
-          <img src="~/assets/forever-shashi-logo.png" alt="" />
+          <img
+            src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/forever-shashi-logo.png"
+            alt=""
+          />
         </div>
         <div>
           <ul>
@@ -18,7 +21,10 @@
         </div>
       </div>
       <div class="mobile-menu-button" @click="toggleMenu">
-        <img src="~/assets/menu-black.png" alt="" />
+        <img
+          src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/menu-black.png"
+          alt=""
+        />
       </div>
     </nav>
   </div>
@@ -29,7 +35,6 @@ let showMenu = ref(false);
 
 function toggleMenu() {
   showMenu.value = !showMenu.value;
-  console.log(showMenu.value);
 }
 </script>
 
