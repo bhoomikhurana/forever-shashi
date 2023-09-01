@@ -115,4 +115,14 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 35em) {
+  #our-work {
+    padding-top: 0;
+  }
+
+  .areas-of-work {
+    justify-content: space-around;
+  }
+}
 </style>

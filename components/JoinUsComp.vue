@@ -24,4 +24,10 @@
 #join-us {
   padding-top: 3em;
 }
+
+@media (max-width: 35em) {
+  #join-us {
+    padding-top: 0;
+  }
+}
 </style>

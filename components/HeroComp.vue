@@ -76,4 +76,27 @@ import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
   box-sizing: content-box;
   border: 5px solid white;
 }
+
+@media (max-width: 35em) {
+  #hero {
+    padding-top: 0;
+  }
+
+  .carousel__item {
+    min-height: 200px;
+    width: 100%;
+    background-color: var(--vc-clr-primary);
+    color: var(--vc-clr-white);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+      aspect-ratio: 16/10;
+      width: 100%;
+    }
+  }
+}
 </style>

@@ -128,4 +128,10 @@
 #vision {
   padding-top: 3em;
 }
+
+@media (max-width: 35em) {
+  #vision {
+    padding-top: 0;
+  }
+}
 </style>

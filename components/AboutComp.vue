@@ -3,7 +3,6 @@
     <div class="heading">
       <h2>about</h2>
     </div>
-    <br />
     <div class="who-we-are">
       <div class="subheading">
         <h3>who we are</h3>
@@ -91,7 +90,6 @@
 #about {
   padding-top: 3em;
 }
-
 .text-and-image {
   display: flex;
   justify-content: space-between;
@@ -107,6 +105,22 @@
 
     img {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 35em) {
+  #about {
+    padding-top: 0;
+  }
+
+  .text-and-image {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+
+    .image {
+      width: 50%;
     }
   }
 }
