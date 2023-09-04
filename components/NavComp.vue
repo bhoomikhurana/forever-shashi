@@ -1,6 +1,7 @@
 <template>
   <div>
     <nav>
+      <div class="staging"><p>Staging</p></div>
       <div class="navbar container" :class="showMenu ? 'show-mobile-menu' : ''">
         <div class="logo">
           <img
@@ -39,6 +40,17 @@ function toggleMenu() {
 </script>
 
 <style lang="scss" scoped>
+.staging {
+  background-color: #191919;
+  color: white;
+  text-align: center;
+  p {
+    text-align: center;
+    padding: 0.2em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
 nav {
   position: fixed;
   background-color: white;
