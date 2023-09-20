@@ -76,10 +76,11 @@
             </p>
           </div>
           <div class="image">
-            <img
+            <!-- <img
               src="https://ik.imagekit.io/fawaazfaris/forever-shashi/forever-shashi/mrs-shashi.png"
               alt=""
-            />
+            /> -->
+            <img src="../assets/mrs-shashi.png" alt="" />
           </div>
         </div>
       </div>
@@ -107,7 +108,7 @@
     flex: 0 0 25%;
 
     img {
-      width: 100%;
+      max-width: 140%;
     }
   }
 }
@@ -123,6 +124,9 @@
     align-items: center;
 
     .image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       width: 50%;
     }
   }
